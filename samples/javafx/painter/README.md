@@ -2,7 +2,7 @@
 
 2. Unzip the JavaFX SDK to a directory of your choice. e.g. C:\JavaFXSDK, ~/code/javafx-sdk-24.0.2 (On Mac or Linux)
 
-3. Compile the code in this folder using the following command:
+3. Open terminal or command prompt and compile the code in this folder using the following command:
 On Windows:
 javac --module-path C:\JavaFXSDK\lib --add-modules javafx.fxml,javafx.base,javafx.controls *.java
 
