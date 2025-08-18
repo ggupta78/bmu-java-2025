@@ -100,6 +100,35 @@ public class Operators {
 
   }
 
+  public void operatorPrecedence() {
+    System.out.println("10 * 2 + 5 : " + (10 * 2 + 5));
+    System.out.println("(10 * 2) + 5 : " + ((10 * 2) + 5));
+    System.out.println("10 * (2 + 5) : " + (10 * (2 + 5)));
+    System.out.println("10 * (2 + 5) : " + (10 * (2 + 5)));
+
+    int i = 5;
+    System.out.println("++i + 4 : " + (++i + 4));
+    System.out.println("i++ + 4 : " + (i++ + 4));
+
+    int j = 15;
+    System.out.println(this.toBinaryStringPadded(j));
+    System.out.println("j >> 1 + 1 : " + (j >> 1 + 1));
+    System.out.println(this.toBinaryStringPadded(j >> 1 + 1));
+
+    int a, b;
+    a = b = 10;
+    System.out.println("a: " + a + ", b: " + b);
+
+    int x = 5;
+    int y = 5;
+    x = (y++);
+    System.out.println("x: " + x + ", y: " + y);
+
+    int z = 10;
+    z = z++ + ++z;
+    System.out.println("z = " + z);
+  }
+
   // Private Method
 
   private String toBinaryStringPadded(int number) {

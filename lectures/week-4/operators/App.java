@@ -25,5 +25,8 @@ public class App {
 
     System.out.println("\nUnsigned Right Shift");
     operators.unsignedRightShift();
+
+    System.out.println("\nOperator Precedence");
+    operators.operatorPrecedence();
   }
 }
