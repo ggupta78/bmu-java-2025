@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayExample {
   int[] numbers = new int[3];
   int[] primes;
@@ -16,11 +18,20 @@ public class ArrayExample {
 
   public void generatePrimes(int count) {
     primes = new int[count];
+    System.out.println(Arrays.toString(primes));
 
     int index = 0, number = 2;
 
     // For each index until count, find the next prime number
-
+    while (index < count) {
+      if (isPrime(number)) {
+        primes[index] = number;
+        index++;
+        number++;
+      } else {
+        number++;
+      }
+    }
   }
 
   public int[] getPrimes() {
@@ -30,9 +41,9 @@ public class ArrayExample {
   public double getConstant(String constantName) {
     switch (constantName) {
       case "PI":
-        return 0;
+        return constants[2];
       case "GoldenRatio":
-        return 0;
+        return constants[1];
       case "Gravitational":
         return 0;
       case "SpeedOfLight":

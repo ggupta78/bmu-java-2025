@@ -2,7 +2,7 @@ public class ChessBoardPrinter {
 
   public void printBoard() {
     int boardSize = 8; // Standard chessboard size
-    char block = '\u2588';
+    char block = '\u2588'; // '\u20DE';
 
     // Print column labels
     System.out.print("  "); // Offset for row numbers
@@ -13,7 +13,7 @@ public class ChessBoardPrinter {
 
     for (int row = 0; row < boardSize; row++) {
       // Row Loop
-      System.out.print((8 - row) + " "); // Print row number
+      System.out.print((row + 1) + " "); // Print row number
 
       for (int col = 0; col < boardSize; col++) {
         // Determine if the square is "white" or "black"

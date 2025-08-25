@@ -20,6 +20,7 @@ public class ChessBoardPrinterWithArray {
     }
 
     System.out.println(Arrays.deepToString(board) + "\n");
+    // System.out.println(Arrays.toString(board) + "\n");
 
     // Print the board, including column and row labels.
     System.out.println("  a b c d e f g h");
