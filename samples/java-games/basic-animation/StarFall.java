@@ -7,7 +7,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class Board2 extends JPanel
+public class StarFall extends JPanel
     implements Runnable {
 
   private final int B_WIDTH = 650;
@@ -17,11 +17,11 @@ public class Board2 extends JPanel
   private final int DELAY = 3;
 
   private Image[] stars = new Image[10];
-  private int[] starY = new int[10];
   private Thread animator;
-  private int x, y;
+  private int x;
+  private int[] starY = new int[10];
 
-  public Board2() {
+  public StarFall() {
 
     initBoard();
   }
@@ -44,7 +44,6 @@ public class Board2 extends JPanel
     loadImage();
 
     x = INITIAL_X;
-    y = INITIAL_Y;
     initStarY();
   }
 

@@ -14,7 +14,7 @@ public class ShapesExample extends JFrame {
 
     setSize(660, 660);
 
-    setTitle("Donut");
+    setTitle("Shapes");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLocationRelativeTo(null);
   }
