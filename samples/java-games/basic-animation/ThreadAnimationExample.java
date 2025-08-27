@@ -10,12 +10,13 @@ public class ThreadAnimationExample extends JFrame {
 
   private void initUI() {
 
-    add(new Board());
+    // add(new Board());
+    add(new Board2());
 
     setResizable(false);
     pack();
 
-    setTitle("Star");
+    setTitle("Stars");
     setLocationRelativeTo(null);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
