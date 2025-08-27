@@ -57,7 +57,7 @@ public class Board extends JPanel {
     g2d.setStroke(new BasicStroke(1));
     g2d.setColor(Color.red);
 
-    for (double deg = 0; deg < 10; deg += 5) {
+    for (double deg = 0; deg < 360; deg += 5) {
       AffineTransform at = AffineTransform.getTranslateInstance(w / 2, h / 2);
       at.rotate(Math.toRadians(deg));
       g2d.draw(at.createTransformedShape(e));

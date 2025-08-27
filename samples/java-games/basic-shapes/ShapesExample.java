@@ -10,8 +10,7 @@ public class ShapesExample extends JFrame {
 
   private void initUI() {
 
-    // add(new Board());
-    add(new Rectangles());
+    add(new Board());
 
     setSize(660, 660);
 
