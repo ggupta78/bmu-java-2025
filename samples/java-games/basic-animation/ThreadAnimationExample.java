@@ -11,6 +11,7 @@ public class ThreadAnimationExample extends JFrame {
   private void initUI() {
 
     // add(new Board());
+    // create new StarFall JPanel
     add(new StarFall());
 
     setResizable(false);

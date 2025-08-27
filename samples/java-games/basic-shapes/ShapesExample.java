@@ -11,6 +11,7 @@ public class ShapesExample extends JFrame {
   private void initUI() {
 
     // add(new Board());
+    // Creating new Reactangles JPanel
     add(new Rectangles());
 
     setSize(660, 660);

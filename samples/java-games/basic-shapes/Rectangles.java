@@ -37,13 +37,14 @@ public class Rectangles extends JPanel {
     g2d.setColor(Color.BLUE);
 
     int gap = 0;
+
     while (gap <= 255) {
-      // draw Rectangle2D
+      // draw smaller rectangles with each loop
       g2d.draw(new Rectangle2D.Double(x + gap, y + gap, w - (gap * 2), h - (gap * 2)));
       gap = gap + 15;
     }
 
-    // draw connecting lines
+    // draw the four connecting lines
     g2d.setColor(Color.BLUE);
     // top left to center
     g2d.draw(new Line2D.Double(x, y, gap, gap));
@@ -53,6 +54,5 @@ public class Rectangles extends JPanel {
     g2d.draw(new Line2D.Double(x, y + h, x + gap - 15, gap + h - (gap * 2) + 30));
     // top right to center
     g2d.draw(new Line2D.Double(x + w, y, gap + w - (gap * 2) + 30, gap));
-
   }
 }

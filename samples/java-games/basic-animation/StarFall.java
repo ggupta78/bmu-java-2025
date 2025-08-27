@@ -18,8 +18,8 @@ public class StarFall extends JPanel
 
   private Image[] stars = new Image[10];
   private Thread animator;
-  private int x;
-  private int[] starY = new int[10];
+  private int x; // Star horizontal positions will be the same
+  private int[] starY = new int[10]; // Star vertical positions will be updated
 
   public StarFall() {
 
