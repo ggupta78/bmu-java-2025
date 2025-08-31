@@ -28,8 +28,14 @@ public class SpaceShip {
 
   public void move() {
 
-    x += dx;
-    y += dy;
+    if (dx != 0) {
+      System.out.println("Moving ship by dx: " + dx);
+      x += dx;
+    }
+    if (dy != 0) {
+      System.out.println("Moving ship by dy: " + dy);
+      y += dy;
+    }
   }
 
   public int getX() {
