@@ -64,7 +64,7 @@ public class Board extends JPanel implements ActionListener {
           missile.getY(), this);
     }
 
-    // printFPS(g2d);
+    printFPS(g2d);
   }
 
   private void printFPS(Graphics2D g2d) {
@@ -88,7 +88,7 @@ public class Board extends JPanel implements ActionListener {
     updateMissiles();
     updateSpaceShip();
 
-    // calculateFPS();
+    calculateFPS();
 
     repaint();
   }
