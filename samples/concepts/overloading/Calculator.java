@@ -1,3 +1,4 @@
+
 public class Calculator {
 
   // Overloaded method 1: Adds two integers
@@ -12,6 +13,7 @@ public class Calculator {
     return a + b;
   }
 
+  // double result = add(3.4, 5.6);
   // Methods cannot be overloaded just on return type
   // public float add(double x, double y) {
   // System.err.println("Adding two doubles: " + (x + y));
@@ -34,5 +36,7 @@ public class Calculator {
     // Object oCalc = new Calculator();
     // double result = ((Calculator) oCalc).add(100.5, 200.5);
     // System.out.println("Object based result: " + result);
+
+    String str = new String("Hello" + "World" + "!");
   }
 }

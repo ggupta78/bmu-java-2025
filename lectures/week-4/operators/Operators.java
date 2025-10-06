@@ -98,6 +98,13 @@ public class Operators {
     System.out.println(this.toBinaryStringPadded(shiftedPositive) + " " + shiftedPositive);
     System.out.println(this.toBinaryStringPadded(shiftedNegative) + " " + shiftedNegative);
 
+    System.out.println("\nQuiz question:");
+
+    int x = -8;
+    System.out.println(this.toBinaryStringPadded(x) + " " + x);
+    int result = x >>> 24;
+    System.err.println(this.toBinaryStringPadded(result) + " " + result);
+
   }
 
   public void operatorPrecedence() {
@@ -133,7 +140,7 @@ public class Operators {
 
   private String toBinaryStringPadded(int number) {
     String binaryString = Integer.toBinaryString(number);
-    String paddedBinaryString = String.format("%8s", binaryString).replace(' ', '0');
+    String paddedBinaryString = String.format("%32s", binaryString).replace(' ', '0');
     return paddedBinaryString;
   }
 }

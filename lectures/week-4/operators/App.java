@@ -23,10 +23,10 @@ public class App {
     // System.out.println("\nLeft and Right Shift");
     // operators.leftRightShift();
 
-    // System.out.println("\nUnsigned Right Shift");
-    // operators.unsignedRightShift();
+    System.out.println("\nUnsigned Right Shift");
+    operators.unsignedRightShift();
 
-    System.out.println("\nOperator Precedence");
-    operators.operatorPrecedence();
+    // System.out.println("\nOperator Precedence");
+    // operators.operatorPrecedence();
   }
 }

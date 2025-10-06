@@ -35,5 +35,9 @@ public class Main {
     cb350.startEngine();
     ((Motorcycle) cb350).performWheelie();
 
+    System.out.println("Total Vehicle Count: " + Vehicle.getVehicleCount());
+
+    String greeting = "Hello World!"; // ASD@#$#@
+    greeting = greeting + ", Hi World"; // HKD23432
   }
 }
